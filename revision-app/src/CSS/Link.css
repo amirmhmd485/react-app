@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+}
+a:hover{
+    color: orangered;
+}

@@ -1,0 +1,38 @@
+.cruds{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ccc;
+    .left{
+        h2{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .right{
+        display: flex;
+        gap: 10px;
+        button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            transition:0.5s;
+            &:hover{
+                background-color: #0056b3;
+            }
+            &:active{
+                transform: scale(0.5);
+            }
+            &:first-of-type{
+                background-color: #007bff;
+            }
+            &:last-of-type{
+                background-color: #dc3545;
+            }
+        }
+    }
+}
