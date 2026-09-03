@@ -1,0 +1,20 @@
+.btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color:#007bff;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+    &:active{
+        transform: scale(0.9);
+    }
+}
+.btn.disabled{
+    pointer-events: none;
+    background-color: gray;
+}
