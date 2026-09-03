@@ -4,9 +4,9 @@ import "../CSS/Container.css"
 
 export default function Header(){
     const linksProps = [
-        {id: 0, href: '#Home', linkName: 'Home'},
+        {id: 0, href: '#landing', linkName: 'landing'},
         {id: 1, href: '#about', linkName: 'About'},
-        {id: 2, href: '#contact', linkName: 'Contact'},
+        {id: 2, href: '#test', linkName: 'test'},
         {id: 3, href: '#team', linkName: 'Team'},
         {id: 4, href: '#testimonials', linkName: 'Testimonials'}
     ]

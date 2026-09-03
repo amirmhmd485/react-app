@@ -10,14 +10,16 @@ export default function About(){
         setTaskName(e.target.value);
     }
     function addTask(){
-        let obj = {
-            id:task.length + 1,
-            name:taskName
+        if(taskName != ""){
+            let obj = {
+                id:task.length + 1,
+                name:taskName
+            }
+            let newTask = [...task];
+            newTask.push(obj);
+            setTask(newTask);
+            setTaskName("");
         }
-        let newTask = [...task];
-        newTask.push(obj);
-        setTask(newTask);
-        setTaskName("");
     }
     function deletetask(id){
         let newTask = [...task];
@@ -38,7 +40,7 @@ export default function About(){
         return <Crud key = {task.id} taskName={task.name} deleteTask={() => deletetask(task.id)} editTask={() => editTask(task.id)}/>
     })
     return(
-        <div className="about">
+        <div className="about" id="about">
             <div className="container">
                 <Abouthead taskName = {taskName} changeTaskName={ChangeTaskName} addTask={addTask}/>
                 {tasksList}

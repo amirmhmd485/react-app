@@ -3,6 +3,9 @@
     margin:0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     border-bottom: 1px solid #333;
     .container{

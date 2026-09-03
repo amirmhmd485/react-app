@@ -14,7 +14,8 @@
         }
     }
     button{
-        padding: 10px 20px;
+        width: 200px;
+        padding: 8px 20px;
         border-radius: 5px;
         border: none;
         background-color: #007bff;
